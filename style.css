@@ -12,4 +12,13 @@ table th, table td {
 table th, table td , table tr , table thead{
     text-align: center;
     padding: 8px;
+    transition:1s background-color ease-in-out;
+}
+
+
+
+.found{
+    
+    background-color: green;
+    color: white;
 }
