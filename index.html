@@ -39,9 +39,15 @@
 
 
     </table>
-    <form id="form" onsubmit="addBook()">
+    <form id="form" onsubmit="addBook(); return false">
     <input placeholder="Titolo" id="inputTitolo" type="text"/><input placeholder="Autore" id="inputAutore" type="text"/><input placeholder="Anno" id="inputAnno" type="text"/><input placeholder="Letto" id="inputLetto" type="text"/>
-        <input type="submit"/>
+        <input type="submit" value="Aggiungi Libro"/>
+    </form>
+
+
+    <form id="+formCerca" onsubmit="searchBook();return false">
+        <input placeholder="Cerca" id="Inserisci nome libro" type="text" />
+        <input type="submit"  value="Cerca"/>
     </form>
 
     <script src="index.js"></script>

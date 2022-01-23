@@ -33,13 +33,13 @@ function book(
 
 function createTable(){
     
-    for(book of Library){
+    for(elem of Library){
     document.getElementById('tableBody').innerHTML +=
     `<tr>
-        <td>${book.title}</td>
-        <td>${book.autor}</td>
-        <td>${book.year}</td>
-        <td>${book.read}</td>
+        <td>${elem.title}</td>
+        <td>${elem.autor}</td>
+        <td>${elem.year}</td>
+        <td>${elem.read}</td>
     
     
     
@@ -52,6 +52,7 @@ function createTable(){
     }
 
 }
+
 createTable();
 
 
@@ -61,9 +62,24 @@ function addBook(){
     let year=document.getElementById('inputAnno').value;
     let read=document.getElementById('inputLetto').value;    
     Library.push(new book(title,autor,year,read));
+    document.getElementById('tableBody').innerHTML +=
+    `<tr>
+        <td>${title}</td>
+        <td>${autor}</td>
+        <td>${year}</td>
+        <td>${read}</td>   
     
-    createTable();
+    </tr> 
+    
+    `   
 
 }
 
+
+function searchBook(){
+    let search=document.getElementById('inputCerca').value;
+    for ()
+    
+
+}
 
