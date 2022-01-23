@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 table{
     width: 100%;
     border-collapse: collapse;
@@ -21,4 +26,19 @@ table th, table td , table tr , table thead{
     
     background-color: green;
     color: white;
+}
+
+header{
+    height: 4rem;
+    border: 2px solid red;
+    margin:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+nav {
+    background-color: sandybrown;
+    
+    
 }

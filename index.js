@@ -83,9 +83,9 @@ function addBook() {
 function searchBook() {
     let search = document.getElementById('inputCerca').value;
     for (let i=0;i<Library.length;i++) {
-        console.log(i)
+        
         if( Library[i].title.toLowerCase().includes(search.trim().toLowerCase())){
-            console.log(i)
+            
             return addClass(i)
         }
         
