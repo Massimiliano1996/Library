@@ -1,0 +1,15 @@
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #ddd;
+
+}
+table th, table td {
+    text-align: left;
+    padding: 8px;
+}
+table th, table td , table tr , table thead{
+    text-align: center;
+    padding: 8px;
+}
